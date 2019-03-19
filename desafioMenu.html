@@ -7,7 +7,80 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        *{
+            margin:0 auto;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /* ======================== */
+        .cabecalho{
+            width: 100%;
+            background-color: black;
+            float: left;
+            border-bottom: 7px #10A8A5 solid;
+            padding: 5px;            
+        }
+        
+        /* ======================== */
+        .logo{
+            display: inline-block;
+            width: 300px;
+            float: left;
+        }
+
+        .logo img{
+            width: 100%;
+        }
+        /* ======================== */
+        .menu-toggle{
+            display: none;
+        }
+
+        .menu{
+            display: inline-block;
+            width: 400px;
+            float: left;
+
+        }
+        .menu ul, ul li{
+            display: inline-block;
+        }
+
+        ul li{
+            padding: 20px;
+
+        }
+
+        ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* ======================== */
+        .autenticacao{
+            display: inline-block;
+            float: right;
+            padding: 20px;
+            font-size: 18px;
+        }
+        a:-webkit-any-link{
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+
+        .botao{
+            border-radius: 20px;
+            background-color: red;
+            padding: 5px 15px;
+            margin-left: 10px;
+        }
+
+
+
+
     </style>
 </head>
 
@@ -15,7 +88,7 @@
     <header class="cabecalho">
         <div class="logo">
             <a href="#inicio">
-                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" class="" />
             </a>
         </div>
         <button class="menu-toggle">
@@ -39,7 +112,7 @@
         </nav>
         <aside class="autenticacao">
             <a href="#login">Login</a>
-            <a href="#registar" class="botao destaque">Registrar</a>
+            <a href="#registrar" class="botao destaque">Registrar</a>
         </aside>
     </header>
 
